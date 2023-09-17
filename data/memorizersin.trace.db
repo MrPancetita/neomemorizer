@@ -1,0 +1,12 @@
+2023-09-16 17:31:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS materialsin (id IDENTITY NOT NULL PRIMARY KEY, numero NUMBER NOT NULL, palabra VARCHAR(100) NOT NULL, imagenPath VARCHAR(100) NOT NULL,[*])"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS materialsin (id IDENTITY NOT NULL PRIMARY KEY, numero NUMBER NOT NULL, palabra VARCHAR(100) NOT NULL, imagenPath VARCHAR(100) NOT NULL,[*])"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS materialsin (id IDENTITY NOT NULL PRIMARY KEY, numero NUMBER NOT NULL, palabra VARCHAR(100) NOT NULL, imagenPath VARCHAR(100) NOT NULL,) [42001-214]
+2023-09-16 17:33:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS materialsin (id IDENTITY NOT NULL PRIMARY KEY, numero INT NOT NULL, palabra VARCHAR(100) NOT NULL, imagenPath VARCHAR(100) NOT NULL,[*])"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS materialsin (id IDENTITY NOT NULL PRIMARY KEY, numero INT NOT NULL, palabra VARCHAR(100) NOT NULL, imagenPath VARCHAR(100) NOT NULL,[*])"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS materialsin (id IDENTITY NOT NULL PRIMARY KEY, numero INT NOT NULL, palabra VARCHAR(100) NOT NULL, imagenPath VARCHAR(100) NOT NULL,) [42001-214]
+2023-09-16 17:33:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DELETE [*]* FROM materialsin"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM materialsin"; expected "identifier"; SQL statement:
+DELETE * FROM materialsin [42001-214]
