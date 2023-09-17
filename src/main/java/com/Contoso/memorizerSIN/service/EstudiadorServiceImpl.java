@@ -2,17 +2,17 @@ package com.contoso.memorizerSIN.service;
 import java.util.List;
 
 import com.contoso.memorizerSIN.model.TarjetaMemoria;
-import com.contoso.memorizerSIN.repository.EstudiadorRepository;
+import com.contoso.memorizerSIN.repository.TarjetaMemoriaRepository;
 
 public class EstudiadorServiceImpl implements EstudiadorService{
 
-    private EstudiadorRepository estudiadorRepository;
+    private TarjetaMemoriaRepository estudiadorRepository;
 
-    public EstudiadorRepository getEstudiadorRepository() {
+    public TarjetaMemoriaRepository getEstudiadorRepository() {
         return estudiadorRepository;
     }
 
-    public void setEstudiadorRepository(EstudiadorRepository estudiadorRepository) {
+    public void setEstudiadorRepository(TarjetaMemoriaRepository estudiadorRepository) {
         this.estudiadorRepository = estudiadorRepository;
     }
 
