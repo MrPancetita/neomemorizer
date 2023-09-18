@@ -19,8 +19,8 @@ public class TarjetaMemoriaRepositoryImpl implements TarjetaMemoriaRepository{
     }
 
     @Override
-    public List<TarjetaMemoria> getTarjetasMemoria() {
-        return jdbcTemplate.query("select * from tarjetamemoria", new TarjetaMemoriaRowMapper());
+    public List<TarjetaMemoria> findAll() {
+        return jdbcTemplate.query("SELECT * FROM tarjetamemoria", new TarjetaMemoriaRowMapper());
     }
 
     @Override

@@ -4,8 +4,8 @@ import java.util.List;
 
 import com.contoso.memorizerSIN.model.TarjetaMemoria;
 
-public interface EstudiadorService {
+public interface TarjetaMemoriaService {
 
-    List<TarjetaMemoria> getTarjetasMemoria();
+    List<TarjetaMemoria> findAll();
     
 }

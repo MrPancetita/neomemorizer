@@ -6,7 +6,7 @@ import com.contoso.memorizerSIN.model.TarjetaMemoria;
 
 public interface TarjetaMemoriaRepository {
 
-    List<TarjetaMemoria> getTarjetasMemoria();
+    List<TarjetaMemoria> findAll();
     TarjetaMemoria createTarjetaMemoria();
     
 }

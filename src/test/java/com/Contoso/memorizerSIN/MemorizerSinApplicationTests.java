@@ -37,6 +37,8 @@ class MemorizerSinApplicationTests {
         for (TarjetaMemoria tarjetaMemoria : tarjetasMemoria) {
             System.out.println("Speaker name: " + tarjetaMemoria.getNumero() + " " + tarjetaMemoria.getPalabra()+ " " + tarjetaMemoria.getImagen());
         }
+
+		
     }
 
 
