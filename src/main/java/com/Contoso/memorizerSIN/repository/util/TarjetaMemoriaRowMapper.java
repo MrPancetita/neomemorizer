@@ -5,7 +5,7 @@ import org.springframework.lang.Nullable;
 
 import com.contoso.memorizerSIN.model.TarjetaMemoria;
 
-public class TarjetaRowMapper implements RowMapper<TarjetaMemoria>{
+public class TarjetaMemoriaRowMapper implements RowMapper<TarjetaMemoria>{
 
     @Override
     @Nullable
