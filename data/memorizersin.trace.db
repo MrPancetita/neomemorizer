@@ -202,3 +202,6 @@ SELECT * FROM tarjetamemoria [42102-214]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "TARJETAMEMORIA" no encontrada
 Table "TARJETAMEMORIA" not found; SQL statement:
 SELECT * FROM tarjetamemoria [42102-214]
+2023-09-19 22:43:16 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TARJETAMEMORIA" not found; SQL statement:
+SELECT * FROM tarjetamemoria [42102-214]

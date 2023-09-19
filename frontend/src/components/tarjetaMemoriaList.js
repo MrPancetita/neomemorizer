@@ -1,25 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import TarjetaMemoriaRow from "./tarjetaMemoriaRow";
 
 const path = "/images/"; 
 
-const TarjetaMemoria = ({tarjeta}) => {
+
+
+
+const TarjetaMemoriaList = () => {
+
+  const [tarjetas, setTarjetas] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('/estudiador');
+      const body = await response.json();
+      setTarjetas(body);
+    }
+    fetchData();
+  }, []);
+
+    
     return (
-        <div>
-            <div className="col-1">
-                {tarjeta.id}
-            </div>
-            <div className="col-2">
-                {tarjeta.numero}
-            </div>
-            <div className="col-3">
-                {tarjeta.palabra}
-            </div>
-            <div className="col-6">
-                <img src={path + tarjeta.imagen} alt="Imagen" /> 
-            </div>
-        </div>
+        <table className="table table-hover table table-dark">
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Palabra</th>
+            <th>Imagen</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tarjetas.map((t) => (
+            <TarjetaMemoriaRow key={t.id} tarjeta={t} />
+          ))}
+        </tbody>
+      </table>
     );  
 
 }
 
-export default TarjetaMemoria;
+export default TarjetaMemoriaList;

@@ -2,19 +2,16 @@ import React from "react";
 
 const path = "/images/"; 
 
-const TarjetaMemoria = ({tarjeta}) => {
+const TarjetaMemoriaRow = ({tarjeta}) => {
     return (
         <tr>
-            <td className="col-1">
-                {tarjeta.id}
-            </td>
-            <td className="col-2">
+            <td >
                 {tarjeta.numero}
             </td>
-            <td className="col-3">
+            <td >
                 {tarjeta.palabra}
             </td>
-            <td className="col-6">
+            <td className="img-thumbnail">
                 <img src={path + tarjeta.imagen} alt="Imagen" /> 
             </td>
         </tr>
@@ -22,4 +19,4 @@ const TarjetaMemoria = ({tarjeta}) => {
 
 }
 
-export default TarjetaMemoria;
+export default TarjetaMemoriaRow;
