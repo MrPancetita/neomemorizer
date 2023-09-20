@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TarjetaMemoriaRow from "./tarjetaMemoriaRow";
 
-const path = "/images/"; 
-
-
-
 
 const TarjetaMemoriaList = () => {
 

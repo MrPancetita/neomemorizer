@@ -1,7 +1,7 @@
 DELETE FROM tarjetamemoria; 
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (0, 'OSO', 'cero.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (1, 'TE', 'uno.jpg');
-INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (2, 'NU', 'dos.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (2, 'ÑU', 'dos.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (3, 'HUMO', 'tres.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (4, 'ORO', 'cuatro.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (5, 'OLA', 'cinco.jpg');
@@ -9,3 +9,9 @@ INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (6, 'OJO', 'seis.jpg
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (7, 'OCA', 'siete.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (8, 'VIA', 'ocho.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (9, 'BUHO', 'nueve.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (10, 'TIZA', 'diez.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (11, 'DEDO', 'once.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (12, 'TUNO', 'doce.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (13, 'ATOMO', 'trece.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (14, 'TORO', 'catorce.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (15, 'TELE', 'quince.jpg');

@@ -24,6 +24,7 @@ public class TarjetaMemoriaRepositoryImpl implements TarjetaMemoriaRepository{
     }
 
     @Override
+    //TODO: Implementar
     public TarjetaMemoria createTarjetaMemoria() {
         throw new UnsupportedOperationException("Unimplemented method 'createTarjetaMemoria'");
     }

@@ -16,6 +16,8 @@
 	<description>Memorizer SIN project for HR-CONTOSO</description>
 	<properties>
 		<java.version>17</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring-boot.run.jvmArguments>-Dfile.encoding=UTF-8</spring-boot.run.jvmArguments>
 	</properties>
 	<dependencies>
 		<dependency>
