@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
-//import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.contoso.memorizerSIN.model.TarjetaMemoria;
 
-//@SpringBootTest removed to allow launching test with webserver running. 
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT) //remove to allow launching test with webserver running. 
 class MemorizerSinApplicationTests {
 
 	@Test
