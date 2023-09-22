@@ -25,7 +25,7 @@ class MemorizerSinApplicationTests {
         RestTemplate restTemplate = new RestTemplate();
 
         ResponseEntity<List<TarjetaMemoria>> tarjetasMemoriaResponse = restTemplate.exchange(
-                "http://localhost:8080/memorizersin/estudiador", HttpMethod.GET,
+                "http://localhost:8090/memorizersin/estudiador", HttpMethod.GET,
                 null, new ParameterizedTypeReference<List<TarjetaMemoria>>() {
                 });
 
