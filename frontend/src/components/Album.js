@@ -29,17 +29,12 @@ function Copyright() {
     </Typography>
   );
 }
-
     
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-// TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
 
 export default function Album() {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <CssBaseline />
+<React.Fragment>     
+     <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
           <CameraIcon sx={{ mr: 2 }} />
@@ -102,6 +97,6 @@ export default function Album() {
         <Copyright />
       </Box>
       {/* End footer */}
-    </ThemeProvider>
+    </React.Fragment>
   );
 }
