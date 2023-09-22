@@ -1,21 +1,24 @@
 pipeline {
     agent any
     tools {
-        jdk 'jdk-17.0.6+10'
+        jdk 'jdk-17.0.7+7'
     }
     stages {
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/MrPancetita/memorizerSIN'
-                checkout scm
             }
         }
         stage('SonarQube Analysis') {
-            def mvn = tool 'Default Maven';
-            withSonarQubeEnv() {
-                sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=MemorizerSIN -Dsonar.projectName='MemorizerSIN'"
-            }
+            steps {
+                script {
+                    def mvn = tool 'Default Maven';
+                    withSonarQubeEnv('Local SonarQube') {
+                    sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=MemorizerSIN -Dsonar.projectName='MemorizerSIN'"
+                    }
+                }
+             }
         }
         stage('Build') {
             steps {
