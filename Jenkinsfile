@@ -14,9 +14,8 @@ pipeline {
         stage('SonarQube Analysis') {
             def mvn = tool 'Default Maven';
             withSonarQubeEnv() {
-            sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=MemorizerSIN -Dsonar.projectName='MemorizerSIN'"
+                sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=MemorizerSIN -Dsonar.projectName='MemorizerSIN'"
             }
-        }
         }
         stage('Build') {
             steps {
