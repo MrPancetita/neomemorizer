@@ -1,1 +1,1 @@
-"# memorizerSIN" 
+"# memorizersin"
