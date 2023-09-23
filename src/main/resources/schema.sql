@@ -1,4 +1,5 @@
 DROP SCHEMA IF EXISTS neomemorizer CASCADE;
+
 CREATE SCHEMA IF NOT EXISTS neomemorizer; 
 
 SET SCHEMA neomemorizer; 
