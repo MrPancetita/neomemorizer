@@ -1,4 +1,4 @@
-package com.contoso.memorizerSIN.model;
+package com.contoso.neomemorizer.model;
 
 public class TarjetaMemoria {
     private int id; 

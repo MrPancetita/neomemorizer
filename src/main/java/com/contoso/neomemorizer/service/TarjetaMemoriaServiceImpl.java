@@ -1,10 +1,10 @@
-package com.contoso.memorizerSIN.service;
-import java.util.List;
+package com.contoso.neomemorizer.service;
+import com.contoso.neomemorizer.model.TarjetaMemoria;
+import com.contoso.neomemorizer.repository.TarjetaMemoriaRepository;
 
+import java.util.List;
 import org.springframework.stereotype.Service;
 
-import com.contoso.memorizerSIN.model.TarjetaMemoria;
-import com.contoso.memorizerSIN.repository.TarjetaMemoriaRepository;
 
 @Service
 public class TarjetaMemoriaServiceImpl implements TarjetaMemoriaService{

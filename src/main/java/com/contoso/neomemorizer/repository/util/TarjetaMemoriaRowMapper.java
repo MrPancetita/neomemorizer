@@ -1,9 +1,9 @@
-package com.contoso.memorizerSIN.repository.util;
+package com.contoso.neomemorizer.repository.util;
 
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.lang.Nullable;
 
-import com.contoso.memorizerSIN.model.TarjetaMemoria;
+import com.contoso.neomemorizer.model.TarjetaMemoria;
 
 public class TarjetaMemoriaRowMapper implements RowMapper<TarjetaMemoria>{
 

@@ -1,4 +1,4 @@
-package com.Contoso.memorizerSIN;
+package com.contoso.memorizerSIN;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -11,7 +11,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import com.contoso.memorizerSIN.model.TarjetaMemoria;
+import com.contoso.neomemorizer.model.TarjetaMemoria;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT) //remove to allow launching test with webserver running. 
 class MemorizerSinApplicationTests {
@@ -35,7 +35,7 @@ class MemorizerSinApplicationTests {
         List<TarjetaMemoria> tarjetasMemoria = tarjetasMemoriaResponse.getBody();
 
         for (TarjetaMemoria tarjetaMemoria : tarjetasMemoria) {
-            System.out.println("Speaker name: " + tarjetaMemoria.getNumero() + " " + tarjetaMemoria.getPalabra()+ " " + tarjetaMemoria.getImagen());
+            System.out.println("Detalles de la tarjeta: " + tarjetaMemoria.getNumero() + " " + tarjetaMemoria.getPalabra()+ " " + tarjetaMemoria.getImagen());
         }
 
 		

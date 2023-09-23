@@ -1,4 +1,4 @@
-package com.contoso.memorizerSIN.repository;
+package com.contoso.neomemorizer.repository;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Repository;
 
-import com.contoso.memorizerSIN.model.TarjetaMemoria;
-import com.contoso.memorizerSIN.repository.util.TarjetaMemoriaRowMapper;
+import com.contoso.neomemorizer.model.TarjetaMemoria;
+import com.contoso.neomemorizer.repository.util.TarjetaMemoriaRowMapper;
 
 @Repository
 public class TarjetaMemoriaRepositoryImpl implements TarjetaMemoriaRepository{

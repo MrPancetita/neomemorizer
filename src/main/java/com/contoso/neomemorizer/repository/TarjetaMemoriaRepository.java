@@ -1,8 +1,8 @@
-package com.contoso.memorizerSIN.repository;
+package com.contoso.neomemorizer.repository;
 
 import java.util.List;
 
-import com.contoso.memorizerSIN.model.TarjetaMemoria;
+import com.contoso.neomemorizer.model.TarjetaMemoria;
 
 public interface TarjetaMemoriaRepository {
 
