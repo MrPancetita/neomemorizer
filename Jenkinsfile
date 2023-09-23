@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
-                git branch: 'main', url: 'https://github.com/MrPancetita/memorizerSIN'
+                git branch: 'main', url: 'https://github.com/MrPancetita/neomemorizer'
             }
         }
         stage('SonarQube Analysis') {
@@ -15,7 +15,7 @@ pipeline {
                 script {
                     def mvn = tool 'Default Maven';
                     withSonarQubeEnv('Local SonarQube') {
-                    sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=MemorizerSIN -Dsonar.projectName='MemorizerSIN' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_0bdec9fe1dc2f8e304bca42c39f75f3b5befc8f8"
+                    sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=neomemorizer -Dsonar.projectName='neomemorizer' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_0bdec9fe1dc2f8e304bca42c39f75f3b5befc8f8"
                     }
                 }
              }
