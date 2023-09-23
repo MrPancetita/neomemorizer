@@ -14,6 +14,7 @@ pipeline {
         stage('NPM install') {
             steps {
                 sh 'npm install ./frontend'
+                sh 'export CI=false'
             }
         }   
         stage('SonarQube Analysis') {
