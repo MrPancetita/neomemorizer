@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools {
         jdk 'jdk-17.0.7+7'
+        nodejs 'NodeJS 18.18.0 LTS'
     }
     stages {
         stage('Checkout') {
@@ -10,6 +11,11 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/MrPancetita/neomemorizer'
             }
         }
+        stage('NPM install') {
+            steps {
+                sh 'npm install ./frontend'
+            }
+        }   
         stage('SonarQube Analysis') {
             steps {
                 script {

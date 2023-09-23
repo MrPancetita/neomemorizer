@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TarjetaMemoriaRow from "./tarjetaMemoriaRow";
+//import TarjetaMemoriaRow from "./tarjetaMemoriaRow";
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 
 const path = "/images/"; 
