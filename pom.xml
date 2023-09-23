@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.contoso</groupId>
-	<artifactId>memorizerSIN</artifactId>
+	<artifactId>neomemorizer</artifactId>
 	<version>1.0.${maven.build.timestamp}</version>
 	<packaging>war</packaging>
-	<name>memorizerSIN</name>
-	<description>Memorizer SIN project for HR-CONTOSO</description>
+	<name>neomemorizer</name>
+	<description>Neo Memorizer SIN project for HR-CONTOSO</description>
 	<properties>
 		<java.version>17</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
