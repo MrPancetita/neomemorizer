@@ -1,7 +1,7 @@
-DROP SCHEMA IF EXISTS memorizersin CASCADE;
-CREATE SCHEMA IF NOT EXISTS memorizersin; 
+DROP SCHEMA IF EXISTS neomemorizer CASCADE;
+CREATE SCHEMA IF NOT EXISTS neomemorizer; 
 
-SET SCHEMA memorizersin; 
+SET SCHEMA neomemorizer; 
 
 CREATE TABLE IF NOT EXISTS
      tarjetamemoria (id IDENTITY NOT NULL PRIMARY KEY,
