@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        CI = 'false'
+    }
     tools {
         jdk 'jdk-17.0.7+7'
         nodejs 'NodeJS 18.18.0 LTS'
@@ -14,7 +17,6 @@ pipeline {
         stage('NPM install') {
             steps {
                 sh 'npm install ./frontend'
-                sh 'export CI=false'
             }
         }   
         stage('SonarQube Analysis') {
@@ -22,7 +24,7 @@ pipeline {
                 script {
                     def mvn = tool 'Default Maven';
                     withSonarQubeEnv('Local SonarQube') {
-                    sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=neomemorizer -Dsonar.projectName='neomemorizer' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_0bdec9fe1dc2f8e304bca42c39f75f3b5befc8f8"
+                    sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=neomemorizer -Dsonar.projectName='neomemorizer' -Dsonar.host.url=http://172.17.0.2:9000 -Dsonar.token=sqp_3eb0b085c2541e19928bb5f542d0a01a168d525d"
                     }
                 }
              }
@@ -76,6 +78,8 @@ pipeline {
         always {
             junit '**/target/surefire-reports/TEST-*.xml'
             archiveArtifacts 'target/*.war'
+            sh 'gzip -r frontend.zip frontend/build'
+            archiveArtifacts 'frontend.zip'
         }
     }
 }

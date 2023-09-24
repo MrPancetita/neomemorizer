@@ -30,7 +30,4 @@ public class TarjetaMemoria {
     public int getId () {
         return id;
     }
-
-    
-
 }
