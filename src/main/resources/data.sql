@@ -15,3 +15,13 @@ INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (12, 'TUNO', 'doce.j
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (13, 'ATOMO', 'trece.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (14, 'TORO', 'catorce.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (15, 'TELE', 'quince.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (16, 'DAGA', 'dieciseis.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (17, 'ATAQUE', 'diecisiete.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (18, 'TUFO', 'dieciocho.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (19, 'TAPA', 'diecinueve.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (20, 'UÑAS', 'veinte.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (21, 'NIDO', 'veintiuno.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (22, 'NIÑO', 'veintidos.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (23, 'NEMO', 'veintitres.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (24, 'NORIA', 'veintidos.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (25, 'ANILLO', 'veintidos.jpg');

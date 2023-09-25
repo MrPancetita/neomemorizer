@@ -45,7 +45,7 @@ pipeline {
                             environmentName: 'en-prod-1',
                             environmentType: 'production',
                             serviceIds: [
-                                    'b:YXJpOmNsb3VkOmdyYXBoOjpzZXJ2aWNlL2Y3ZmE1NDJhLTgwYWEtNDA3Zi1iMTY1LTU1ZDBiOTdjNTA1NS8yNTg4MTUxZS1hNjBjLTExZWQtYTk1Yi0xMjhiNDI4MTk0MjQ='
+                                    'b:YXJpOmNsb3VkOmdyYXBoOjpzZXJ2aWNlL2Y3ZmE1NDJhLTgwYWEtNDA3Zi1iMTY1LTU1ZDBiOTdjNTA1NS8yODU2Y2FiYS01YjFhLTExZWUtODg5YS0xMjhiNDI4MTk0MjQ='
                             ],
                             site: 'serconlo.atlassian.net',
                             state: 'in_progress'
@@ -65,7 +65,7 @@ pipeline {
                             environmentName: 'en-prod-1',
                             environmentType: 'production',
                             serviceIds: [
-                                    'b:YXJpOmNsb3VkOmdyYXBoOjpzZXJ2aWNlL2Y3ZmE1NDJhLTgwYWEtNDA3Zi1iMTY1LTU1ZDBiOTdjNTA1NS8yNTg4MTUxZS1hNjBjLTExZWQtYTk1Yi0xMjhiNDI4MTk0MjQ='
+                                    'b:YXJpOmNsb3VkOmdyYXBoOjpzZXJ2aWNlL2Y3ZmE1NDJhLTgwYWEtNDA3Zi1iMTY1LTU1ZDBiOTdjNTA1NS8yODU2Y2FiYS01YjFhLTExZWUtODg5YS0xMjhiNDI4MTk0MjQ='
                             ],
                             site: 'serconlo.atlassian.net',
                             state: 'successful'
@@ -78,8 +78,8 @@ pipeline {
         always {
             junit '**/target/surefire-reports/TEST-*.xml'
             archiveArtifacts 'target/*.war'
-            sh 'gzip -r frontend.zip frontend/build'
-            archiveArtifacts 'frontend.zip'
+            sh 'tar -r frontend.tar.gz frontend/build/'
+            archiveArtifacts 'frontend.tar.gz'
         }
     }
 }
