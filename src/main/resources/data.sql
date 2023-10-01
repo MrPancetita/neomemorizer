@@ -23,5 +23,5 @@ INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (20, 'UÑAS', 'veint
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (21, 'NIDO', 'veintiuno.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (22, 'NIÑO', 'veintidos.jpg');
 INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (23, 'NEMO', 'veintitres.jpg');
-INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (24, 'NORIA', 'veintidos.jpg');
-INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (25, 'ANILLO', 'veintidos.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (24, 'NORIA', 'veinticuatro.jpg');
+INSERT INTO tarjetamemoria (numero, palabra, imagen) VALUES (25, 'ANILLO', 'veinticinco.jpg');
