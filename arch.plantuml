@@ -1,0 +1,9 @@
+@startuml neomemorizer-components
+[Spring-boot backend] as Comp1
+[React frontend] as Comp2
+database "H2 file" as Comp3
+
+Comp2 --> Comp1
+Comp1 --> Comp3
+
+@enduml
